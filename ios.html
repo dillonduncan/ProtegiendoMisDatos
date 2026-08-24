@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Malware en IOS</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="icon" href="Static/icono-escudo.ico" type="image/x-icon">
 </head>
@@ -16,6 +16,40 @@
             <h1>Malware en IOS</h1>
         </div>
     </section>
+    <main class="articulo-informe">
+        <h1>Malware en IOS: El Ecosistema Cerrado</h1>
+        <p>
+            iOS es un sistema operativo de código cerrado desarrollado por Apple, teniendo en cuenta que su modelo de seguridad, la revisión 
+            de aplicaciones antes de publicarlas en la App Store y sus restricciones para aplicaciones de terceros hacen que históricamente tenga 
+            menos infecciones de malware que Android. Sin embargo, iOS no es completamente inmune y se han documentado vulnerabilidades y ataques 
+            capaces de comprometer estos dispositivos.
+        </p>
+
+        <h2>EL Principal Factor de Riesgo: EL Jailbreak</h2>
+        <p>
+            La causa más frecuente por la que un iPhone queda expuesto es el jailbreak, es decir, eliminar las restricciones de fábrica impuestas
+            por Apple para instalar aplicaciones fuera de la App Store o personalizar el sistema en profundidad. Al hacerlo también se desactivan
+            las defensas que protegen al dispositivo, dejando prácticamente cualquier código malicioso con vía libre para instalarse.       
+        </p>
+
+        <h2>Tipos de malware y ataques en iOS</h2>        
+        <ul>
+            <li><strong>Rootkits:</strong> Otorgan al atacante privilegios administrativos completos sobre el dispositivo, normalmente tras infectarlo mediante una app maliciosa disfrazada de legítima o un troyano previamente instalado y con ese control puede descargar malware adicional, espiar la navegación y el correo, robar credenciales, escuchar conversaciones, tomar fotografías, ubicar el equipo por GPS y usarlo para fraude de clics.</li>
+            <li><strong>Spyware avanzado:</strong> El caso más conocido es Pegasus, desarrollado por NSO Group, capaz de robar la lista de contactos, la ubicación GPS y las contraseñas de wifi almacenadas en el dispositivo; se distribuyó mediante mensajes de texto con enlaces diseñados específicamente para cada víctima, principalmente periodistas y activistas.</li>
+            <li><strong>Troyanos multiplataforma:</strong> Wirelurker infectaba primero una computadora Mac y permanecía inactivo hasta que se conectaba un iPhone por USB, momento en el que se transfería al dispositivo móvil; XcodeGhost se propagó a través de una versión modificada del entorno de desarrollo Xcode y logró infiltrar más de cuatro mil aplicaciones, entre ellas algunas muy populares, sin que sus propios desarrolladores lo supieran.</li>
+            <li><strong>Kits de acceso remoto:</strong> Como X-Agent (también llamado Sofacy) operan tanto en Android como en iOS y han sido usados en operaciones de ciberespionaje.</li>
+            <li><strong>Ataques "zero-click":</strong> Aprovechan vulnerabilidades en aplicaciones de mensajería como iMessage o WhatsApp para instalar spyware sin que la víctima tenga que interactuar con ningún enlace; el código puede ir oculto en un adjunto, como una imagen o un GIF, y en algunos casos el propio mensaje se autodestruye después de infectar el equipo.</li>
+        </ul>
+
+        <h2>Señales de Alerta</h2>
+        <p>
+            Entre las señales que pueden hacer sospechar que un iPhone está comprometido se encuentran el agotamiento anormal de la batería,
+            ventanas emergentes o anuncios que aparecen con demasiada frecuencia, aplicaciones que se cierran solas, bloqueos del sistema,
+            aplicaciones que el usuario no recuerda haber instalado, aumento inexplicable del consumo de datos, sobrecalentamiento y cargos
+            desconocidos asociados al Apple ID. También conviene revisar en ajustes si existen perfiles de configuración o dispositivos gestionados
+            que el usuario no haya autorizado.
+        </p>
+    </main>
     <div id="content-footer"></div>
     <script src="app.js"></script>
 </body>
