@@ -1,12 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Malware Android - Protegiendo mis Datos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Static/icono-escudo.ico" type="image/x-icon">
 </head>
+
 <body>
-    
+    <div id="content-menu"></div>
+    <section id="android">
+        <div class="hero-content">
+            <h1>Malware en Android</h1>
+        </div>
+    </section>
+    <main class="articulo-informe">
+        <h1>Malware en Android: Superficie de Ataque</h1>
+        <p>Los dispositivos móviles Android concentran la mayor parte de las infecciones de malware, principalmente
+            porque su modelo de distribución
+            de aplicaciones es más abierto que el de iOS. Google Play aplica controles de seguridad menos estrictos que
+            la App Store de Apple, además,
+            el sistema permite instalar aplicaciones desde fuentes externas o “tiendas de terceros”, lo que amplía la
+            superficie disponible para los ciberdelincuentes.
+        </p>
+        <h2>¿Como se Propaga el Malware en Android?</h2>
+        <p>Uno de los métodos más comunes es la instalación de aplicaciones infectadas. Las apps descargadas fuera de
+            las tiendas
+            oficiales o construidas con kits de desarrollo (SDK) poco confiables tienen más probabilidades de contener
+            código malicioso,
+            incluso Google Play ha alojado accidentalmente aplicaciones dañinas que luego fueron retiradas.
+        </p>
+        <ul>
+            <li><strong>Vulnerabilidades del Sistema:</strong> Ocurre al aprovechar vulnerabilidades del sistema
+                operativo que no han sido corregidas, porque cuando un usuario mantiene su dispositivo sin actualizar
+                puede quedar expuesto a vulnerabilidades conocidas que pueden ser aprovechadas por los atacantes.</li>
+            <li><strong>Ingeniería Social:</strong> Mediante phishing y smishing, donde el atacante utiliza correos
+                electrónicos o mensajes de texto que aparentan provenir de una fuente confiable y que al hacer clic
+                descargan malware o redirigen a sitios fraudulentos.</li>
+            <li><strong>Redes Inseguras:</strong> Navegar por sitios no seguros o conectarse a redes wifi abiertas
+                expone al equipo a ataques de intermediario y a la descarga silenciosa de código malicioso.</li>
+        </ul>
+        <h2>Principales Tipos de Malware en Android</h2>
+        <ul>
+            <li><strong>Troyanos:</strong> Se disfrazan de aplicaciones legítimas para que el usuario los instale de
+                forma voluntaria. Un caso conocido es el troyano bancario Anubis, que engaña a la víctima para obtener
+                permisos de accesibilidad y, a partir de ahí, registra en silencio todo lo que se escribe en pantalla,
+                incluidas las contraseñas.</li>
+            <li><strong>Ransomware móvil:</strong> En sus primeras versiones bloqueaba la pantalla acusando al usuario
+                de algún delito y exigiendo un pago; su evolución actual cifra directamente los archivos del dispositivo
+                y solo entrega la clave de descifrado si se paga el rescate.</li>
+            <li><strong>Adware:</strong> Satura al usuario con publicidad, modifica la configuración del navegador y
+                recopila datos personales como el número de teléfono o el correo; algunas variantes más agresivas llegan
+                a obtener permisos de administrador del equipo sin autorización.</li>
+            <li><strong>Spyware:</strong> Se ejecuta de forma oculta para monitorear la actividad del usuario, registrar
+                su ubicación y extraer credenciales de cuentas de correo o comercio electrónico.</li>
+            <li><strong>Troyanos de SMS:</strong> Envían mensajes a números de tarifa prémium sin que el usuario lo
+                note, generando cobros elevados en la factura móvil.</li>
+        </ul>
+        <h2>Campañas reales documentadas</h2>
+        <p>El impacto de estas amenazas se ilustra en casos reales: Roaming Mantis se distribuyó mediante el secuestro
+            de DNS en routers
+            comprometidos y robaba información de los usuarios junto con credenciales de doble factor; XLoader se hacía
+            pasar por aplicaciones
+            como Facebook o Chrome para instalar apps maliciosas adicionales y recolectar datos personales y
+            financieros; y campañas como Gooligan,
+            HummingBad o Agent Smith llegaron a infectar entre uno y veinticinco millones de dispositivos Android,
+            robando credenciales de Google o
+            sustituyendo aplicaciones legítimas por versiones adulteradas.
+        </p>
+
+        <h2>Riesgos e indicios de infección</h2>
+
+        <p>El malware en Android puede provocar el robo de credenciales bancarias, información almacenada en el
+            dispositivo, números telefónicos
+            y listas de contactos. Esta información puede utilizarse posteriormente para cometer robo de identidad o
+            enviar enlaces maliciosos a otras
+            personas desde los contactos de la víctima.</p>
+
+        <p>Algunas señales que pueden indicar que un dispositivo está comprometido son la aparición constante de
+            ventanas emergentes, un consumo anormal
+            de batería, aplicaciones que el usuario no reconoce, lentitud, bloqueos frecuentes, dificultades para
+            desinstalar determinados programas, mensajes
+            enviados sin autorización y una disminución inexplicable del saldo móvil.
+        </p>
+
+    </main>
+    <div id="content-footer"></div>
+    <script src="app.js"></script>
 </body>
+
 </html>
