@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,53 +8,89 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Static/icono-escudo.ico" type="image/x-icon">
 </head>
+
 <body>
     <div id="content-menu"></div>
 
     <section id="framework">
         <div class="hero-content">
             <h1>Framework de Seguridad</h1>
-        </div>  
-        <section/>
-    <main class="articulo-informe">
-        <h1>Buenas Practicas en el Uso de Dispositivos Móviles</h1>
-        <p>
-            La protección de un dispositivo móvil no depende únicamente del sistema operativo. También es necesario establecer buenas prácticas
-            de configuración, uso diario y manejo de la información. Las siguientes recomendaciones reúnen las medidas de seguridad planteadas
-            en las fuentes consultadas y las complementan con los lineamientos de NIST SP 800-124 Rev. 2 y OWASP Mobile Top 10 2024.
-        </p>
+        </div>
+        <section />
+        <main class="articulo-informe">
+            <h1>Buenas Practicas en el Uso de Dispositivos Móviles</h1>
+            <p>
+                La protección de un dispositivo móvil no depende únicamente del sistema operativo. También es necesario
+                establecer buenas prácticas
+                de configuración, uso diario y manejo de la información. Las siguientes recomendaciones reúnen las
+                medidas de seguridad planteadas
+                en las fuentes consultadas y las complementan con los lineamientos de NIST SP 800-124 Rev. 2 y OWASP
+                Mobile Top 10 2024.
+            </p>
 
-        <h2>Configuración del Dispositivo</h2>        
-        <ul>
-            <li><strong>Utilizar bloqueo de pantalla:</strong> Configurar un PIN, contraseña, patrón o método biométrico y establecer el bloqueo automático después de un periodo corto de inactividad.</li>
-            <li><strong>Activar el cifrado del almacenamiento:</strong> Permite proteger la información almacenada para que pueda ser leída solamente con la clave correspondiente.</li>
-            <li><strong>Mantener actualizado el sistema operativo y las aplicaciones:</strong> Las actualizaciones corrigen vulnerabilidades que pueden ser aprovechadas por los atacantes.</li>
-            <li><strong>Revisar los permisos de las aplicaciones:</strong> Cada aplicación debería tener únicamente los permisos que necesita para funcionar.</li>
-            <li><strong>Activar la autenticación multifactor (MFA):</strong> Especialmente en cuentas y servicios que manejan información sensible. Esta medida permite reducir el riesgo incluso cuando una contraseña llega a quedar expuesta.</li>
-        </ul>
+            <h2>Configuración del Dispositivo</h2>
+            <ul>
+                <li><strong>Utilizar bloqueo de pantalla:</strong> Configurar un PIN, contraseña, patrón o método
+                    biométrico y establecer el bloqueo automático después de un periodo corto de inactividad.</li>
+                <li><strong>Activar el cifrado del almacenamiento:</strong> Permite proteger la información almacenada
+                    para que pueda ser leída solamente con la clave correspondiente.</li>
+                <li><strong>Mantener actualizado el sistema operativo y las aplicaciones:</strong> Las actualizaciones
+                    corrigen vulnerabilidades que pueden ser aprovechadas por los atacantes.</li>
+                <li><strong>Revisar los permisos de las aplicaciones:</strong> Cada aplicación debería tener únicamente
+                    los permisos que necesita para funcionar.</li>
+                <li><strong>Activar la autenticación multifactor (MFA):</strong> Especialmente en cuentas y servicios
+                    que manejan información sensible. Esta medida permite reducir el riesgo incluso cuando una
+                    contraseña llega a quedar expuesta.</li>
+            </ul>
 
-        <h2>Uso Cotidiano</h2>        
-        <p>Las aplicaciones deben descargarse preferiblemente desde Google Play o App Store, revisando antes sus comentarios y los permisos que solicitan. Evitar hacer clic en enlaces o abrir adjuntos de correos, SMS o mensajería instantánea no solicitados; ante la duda, escribir la URL directamente en el navegador en lugar de seguir el enlace recibido.</p>        
-        <p>Realizar copias de seguridad periódicas, ya sea en la nube o mediante almacenamiento cifrado, permite disponer de una copia de la información en caso de pérdida, daño o compromiso del dispositivo. Finalmente, se debe evitar realizar jailbreak en iOS o rootear dispositivos Android, ya que estas prácticas eliminan capas de protección proporcionadas por los sistemas operativos.</p>
-        
-        <h2>Uso de dispositivos en empresas (Guía NIST y OWASP)</h2>        
-        <p>La guía NIST SP 800-124 Rev. 2 plantea que la seguridad móvil en una organización debe cubrir todo el ciclo de vida del dispositivo (despliegue, uso y disposición final) y contempla tanto los equipos entregados por la empresa como los personales que se usan para trabajar (BYOD). Entre las medidas que propone y que resultan aplicables a cualquier empresa están:</p>
-        
-        <ul>
-            <li>Adoptar una solución de gestión de dispositivos móviles (MDM) que permita aplicar políticas de contraseña, cifrado, instalación de aplicaciones y borrado remoto de forma centralizada.</li>
-            <li>Separar mediante contenedorización los datos y aplicaciones corporativas de los datos personales del usuario, especialmente en esquemas BYOD o COPE (equipos de la empresa con uso personal permitido).</li>
-            <li>Exigir autenticación multifactor y cifrado de extremo a extremo, tanto en tránsito como en reposo, para cualquier acceso a redes o sistemas corporativos desde un dispositivo móvil.</li>
-            <li>Definir con claridad qué aplicaciones están permitidas mediante listas de aplicaciones autorizadas, para reducir la posibilidad de que se instale software no verificado.</li>
-            <li>Capacitar periódicamente al personal en el reconocimiento de phishing y smishing, dado que la ingeniería social sigue siendo la puerta de entrada más común para el malware, tanto en Android como en iOS.</li>
-        </ul>
+            <h2>Uso Cotidiano</h2>
+            <p>Las aplicaciones deben descargarse preferiblemente desde Google Play o App Store, revisando antes sus
+                comentarios y los permisos que solicitan. Evitar hacer clic en enlaces o abrir adjuntos de correos, SMS
+                o mensajería instantánea no solicitados; ante la duda, escribir la URL directamente en el navegador en
+                lugar de seguir el enlace recibido.</p>
+            <p>Realizar copias de seguridad periódicas, ya sea en la nube o mediante almacenamiento cifrado, permite
+                disponer de una copia de la información en caso de pérdida, daño o compromiso del dispositivo.
+                Finalmente, se debe evitar realizar jailbreak en iOS o rootear dispositivos Android, ya que estas
+                prácticas eliminan capas de protección proporcionadas por los sistemas operativos.</p>
 
-        <p>Por otra parte, OWASP Mobile Top 10 2024 permite prestar atención a problemas relacionados con las aplicaciones móviles utilizadas o desarrolladas por las empresas. Entre ellos están el uso incorrecto de credenciales, la presencia de contraseñas o claves de API dentro del código, problemas en la cadena de suministro de software, autenticación o autorización débil y un cifrado insuficiente de la información almacenada.</p>
+            <h2>Uso de dispositivos en empresas (Guía NIST y OWASP)</h2>
+            <p>La guía NIST SP 800-124 Rev. 2 plantea que la seguridad móvil en una organización debe cubrir todo el
+                ciclo de vida del dispositivo (despliegue, uso y disposición final) y contempla tanto los equipos
+                entregados por la empresa como los personales que se usan para trabajar (BYOD). Entre las medidas que
+                propone y que resultan aplicables a cualquier empresa están:</p>
 
-        <h2>Disposición segura de los dispositivos</h2>        
-        <p>Cuando un dispositivo vaya a venderse, donarse, reciclarse o reasignarse, no basta con entregarlo tal como está. Primero se debe eliminar la información sensible. Para ello, es necesario cerrar las sesiones de las cuentas, desvincular el dispositivo de los servicios de nube y de gestión remota y realizar un restablecimiento completo de fábrica. En las empresas, NIST plantea además la necesidad de realizar un proceso formal de sanitización de la información antes de reasignar o retirar un dispositivo, con el objetivo de evitar que los datos corporativos o personales puedan quedar recuperables.</p>
-    </main>
+            <ul>
+                <li>Adoptar una solución de gestión de dispositivos móviles (MDM) que permita aplicar políticas de
+                    contraseña, cifrado, instalación de aplicaciones y borrado remoto de forma centralizada.</li>
+                <li>Separar mediante contenedorización los datos y aplicaciones corporativas de los datos personales del
+                    usuario, especialmente en esquemas BYOD o COPE (equipos de la empresa con uso personal permitido).
+                </li>
+                <li>Exigir autenticación multifactor y cifrado de extremo a extremo, tanto en tránsito como en reposo,
+                    para cualquier acceso a redes o sistemas corporativos desde un dispositivo móvil.</li>
+                <li>Definir con claridad qué aplicaciones están permitidas mediante listas de aplicaciones autorizadas,
+                    para reducir la posibilidad de que se instale software no verificado.</li>
+                <li>Capacitar periódicamente al personal en el reconocimiento de phishing y smishing, dado que la
+                    ingeniería social sigue siendo la puerta de entrada más común para el malware, tanto en Android como
+                    en iOS.</li>
+            </ul>
 
-    <div id="content-footer"></div>
-    <script src="app.js"></script>
+            <p>Por otra parte, OWASP Mobile Top 10 2024 permite prestar atención a problemas relacionados con las
+                aplicaciones móviles utilizadas o desarrolladas por las empresas. Entre ellos están el uso incorrecto de
+                credenciales, la presencia de contraseñas o claves de API dentro del código, problemas en la cadena de
+                suministro de software, autenticación o autorización débil y un cifrado insuficiente de la información
+                almacenada.</p>
+
+            <h2>Disposición segura de los dispositivos</h2>
+            <p>Cuando un dispositivo vaya a venderse, donarse, reciclarse o reasignarse, no basta con entregarlo tal
+                como está. Primero se debe eliminar la información sensible. Para ello, es necesario cerrar las sesiones
+                de las cuentas, desvincular el dispositivo de los servicios de nube y de gestión remota y realizar un
+                restablecimiento completo de fábrica. En las empresas, NIST plantea además la necesidad de realizar un
+                proceso formal de sanitización de la información antes de reasignar o retirar un dispositivo, con el
+                objetivo de evitar que los datos corporativos o personales puedan quedar recuperables.</p>
+        </main>
+
+        <div id="content-footer"></div>
+        <script src="app.js"></script>
 </body>
+
 </html>
