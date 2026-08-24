@@ -9,5 +9,5 @@ function cargarComponent(idContent, archHtml) {
             })
             .catch(error=>console.error(error));
 }
-cargarComponent("content-menu", "menu.html");
-cargarComponent("content-footer", "footer.html");
+cargarComponent("content-menu", "Modulos/menu.html");
+cargarComponent("content-footer", "Modulos/footer.html");
