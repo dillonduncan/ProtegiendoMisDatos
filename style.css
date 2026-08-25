@@ -157,10 +157,13 @@ nav ul li a:hover{
     list-style: none;
     padding: 0;
 }
-.info-equipo ul li{
+.info-equipo ul li a{
+    text-decoration: none;
+    color: #ecf0f1;
     margin-bottom: 8px;
     padding-left: 15px;
     border-left: 3px solid #3498db;
+    transition: color 0.3s ease;
 }
 /* Informe */
 .articulo-informe{   
