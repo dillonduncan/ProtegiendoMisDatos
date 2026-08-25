@@ -11,3 +11,14 @@ function cargarComponent(idContent, archHtml) {
 }
 cargarComponent("content-menu", "Modulos/menu.html");
 cargarComponent("content-footer", "Modulos/footer.html");
+
+// Escuchamos los clics en todo el documento para controlar el menú desplegable dinámico
+document.addEventListener('click', function(evento) {
+    // Si el usuario hace clic en el botón de hamburguesa
+    if (evento.target.classList.contains('menu-toggle') || evento.target.closest('.menu-toggle')) {
+        const navLinks = document.querySelector('.nav-links');
+        if (navLinks) {
+            navLinks.classList.toggle('activo');
+        }
+    }
+});
